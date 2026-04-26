@@ -2,12 +2,19 @@
 import asyncio
 import os
 from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton, FSInputFile
 from aiogram.filters import CommandStart
 from dotenv import load_dotenv
+import openai
+import io
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# Initialize OpenAI API client
+openai.api_key = OPENAI_API_KEY
+
 dp = Dispatcher()
 
 # --- User state storage ---
@@ -103,7 +110,7 @@ TEXTS = {
             "- Inform the office immediately\n"
             "- Do not give medicine unless guest confirms it is safe for them"
         ),
-
+        
         # Voice tour location content (placeholders)
         "voice_panfilov":   "🌳 *Panfilov Park*\n\nVoice tour for Panfilov Park will be available here soon.",
         "voice_greenbazaar":"🛒 *Green Bazaar*\n\nVoice tour for Green Bazaar will be available here soon.",
@@ -136,11 +143,11 @@ TEXTS = {
 
         "tourist_menu":   "Меню туриста:",
         "guide_menu":     "Меню гида:",
-
+        
         # Audio tour menu
         "btn_voice_menu_title": "🎙 Выберите локацию для аудиотура:",
         "btn_panfilov":   "🌳 Парк Панфилова",
-        "btn_greenbazaar":"🛒 Зелёный базар",
+        "btn_greenbazaar": "🛒 Зелёный базар",
         "btn_koktobe":    "🏔 Кок-Тобе",
         "btn_shymbulak":  "⛷ Шымбулак",
         "btn_charyn":     "🏜 Каньон Чарын",
@@ -198,9 +205,9 @@ TEXTS = {
         "voice_greenbazaar":"🛒 *Зелёный базар*\n\nАудиотур по Зелёному базару скоро будет доступен здесь.",
         "voice_koktobe":    "🏔 *Кок-Тобе*\n\nАудиотур по Кок-Тобе скоро будет доступен здесь.",
         "voice_shymbulak":  "⛷ *Шымбулак*\n\nАудиотур по Шымбулаку скоро будет доступен здесь.",
-        "voice_charyn":     "🏜 *Каньон Чарын*\n\nАудиотур по Каньону Чарын скоро будет доступен здесь.",
-        "voice_kolsai":     "💧 *Озёра Кольсай*\n\nАудиотур по Озёрам Кольсай скоро будет доступен здесь.",
-        "voice_issyk":      "🌊 *Озеро Иссык*\n\nАудиотур по Озеру Иссык скоро будет доступен здесь.",
+        "voice_charyn":     "🏜 *Шарын каньоны*\n\nАудиотур по Шарын каньоны скоро будет доступен здесь.",
+        "voice_kolsai":     "💧 *Көлсай көлдері*\n\nАудиотур по Көлсай көлдері скоро будет доступен здесь.",
+        "voice_issyk":      "🌊 *Ыссық көл*\n\nАудиотур по Ыссық көл скоро будет доступен здесь.",
     },
 
     "kk": {
@@ -229,7 +236,7 @@ TEXTS = {
         # Audio tour menu
         "btn_voice_menu_title": "🎙 Аудиотур үшін орынды таңдаңыз:",
         "btn_panfilov":   "🌳 Панфилов саябағы",
-        "btn_greenbazaar":"🛒 Жасыл базар",
+        "btn_greenbazaar": "🛒 Жасыл базар",
         "btn_koktobe":    "🏔 Кок-Тобе",
         "btn_shymbulak":  "⛷ Шымбұлақ",
         "btn_charyn":     "🏜 Шарын каньоны",
@@ -361,6 +368,18 @@ def get_lang(user_id: int) -> str:
 def get_text(user_id: int, key: str) -> str:
     return TEXTS[get_lang(user_id)][key]
 
+async def generate_voice(text: str) -> io.BytesIO:
+    """Generate voice audio from text using OpenAI TTS"""
+    response = openai.Audio.create(
+        model="text-to-speech-1",  # You might need to change this based on OpenAI's API updates
+        voice="en_us_male",        # Adjust if needed
+        input=text,
+        response_format="ogg_opus"  # Telegram-compatible format
+    )
+    audio_buffer = io.BytesIO(response.content)
+    audio_buffer.name = "voice.ogg"
+    return audio_buffer
+
 # ─────────────────────────────────────────────
 # HANDLERS — Language & Start
 # ─────────────────────────────────────────────
@@ -438,51 +457,133 @@ async def voice_tours(message: Message):
     )
 
 # ─────────────────────────────────────────────
-# HANDLERS — Voice Tour Back Button
-# ─────────────────────────────────────────────
-@dp.message(F.text.in_({"⬅ Back", "⬅ Назад", "⬅ Артқа"}))
-async def back_from_voice(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["tourist_menu"], reply_markup=tourist_keyboard(lang))
-
-# ─────────────────────────────────────────────
 # HANDLERS — Voice Tour Locations
 # ─────────────────────────────────────────────
 @dp.message(F.text.in_({"🌳 Panfilov Park", "🌳 Парк Панфилова", "🌳 Панфилов саябағы"}))
 async def voice_panfilov(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_panfilov"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_panfilov")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"🛒 Green Bazaar", "🛒 Зелёный базар", "🛒 Жасыл базар"}))
 async def voice_greenbazaar(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_greenbazaar"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_greenbazaar")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"🏔 Kok Tobe", "🏔 Кок-Тобе"}))
 async def voice_koktobe(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_koktobe"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_koktobe")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"⛷ Shymbulak Ski Resort", "⛷ Шымбулак", "⛷ Шымбұлақ"}))
 async def voice_shymbulak(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_shymbulak"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_shymbulak")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"🏜 Charyn Canyon", "🏜 Каньон Чарын", "🏜 Шарын каньоны"}))
 async def voice_charyn(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_charyn"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_charyn")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"💧 Kolsai Lakes", "💧 Озёра Кольсай", "💧 Көлсай көлдері"}))
 async def voice_kolsai(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_kolsai"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_kolsai")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 @dp.message(F.text.in_({"🌊 Issyk Lake", "🌊 Озеро Иссык", "🌊 Ыссық көл"}))
 async def voice_issyk(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice_issyk"), parse_mode="Markdown")
+    lang = get_lang(uid)
+
+    # Get the tour text
+    tour_text = get_text(uid, "voice_issyk")
+
+    # Generate voice
+    audio = await generate_voice(tour_text)
+
+    # Send voice + caption
+    await message.answer_voice(
+        voice=FSInputFile(audio, filename="voice.ogg"),
+        caption=tour_text,
+        parse_mode="Markdown"
+    )
 
 # ─────────────────────────────────────────────
 # HANDLERS — Guide Menu Items

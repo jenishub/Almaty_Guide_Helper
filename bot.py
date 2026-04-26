@@ -47,7 +47,7 @@ TEXTS = {
         "tourist_menu":   "Tourist menu:",
         "guide_menu":     "Guide menu:",
 
-         # Audio tour menu
+        # Audio tour menu
         "btn_voice_menu_title": "🎙 Select a location for your audio tour:",
         "btn_panfilov":   "🌳 Panfilov Park",
         "btn_greenbazaar":"🛒 Green Bazaar",
@@ -58,18 +58,16 @@ TEXTS = {
         "btn_issyk":      "🌊 Issyk Lake",
         "btn_back_voice": "⬅ Back",
 
-        
-
         # Content
         "itinerary": (
-    "📅 *Itinerary*\n\n"
-    "1. **City Tour of Almaty**: Explore the vibrant city's key sights, including the Medeu Ice Skating Rink, the world’s highest ice rink located in a scenic valley, and the Palace of the Republic, a striking concert hall. Visit the historic Zenkov Cathedral, a stunning wooden structure in Panfilov Park, and finish the tour at the bustling Green Bazaar, filled with local food and crafts.\n\n"
-    "2. **Kok Tobe**: A picturesque hill that provides panoramic views of Almaty and the surrounding mountains. Enjoy a cable car ride to reach the top, where you can explore various attractions, including the famous Kok Tobe TV Tower and enjoy a leisurely walk through the park.\n\n"
-    "3. **Shymbulak Ski Resort**: A premier ski destination located just 25 kilometers from Almaty, known for its modern facilities and diverse slopes catering to all skill levels. Visitors can enjoy skiing, snowboarding, and breathtaking views of the surrounding peaks.\n\n"
-    "4. **Charyn Canyon**: Often referred to as Kazakhstan's Grand Canyon, Charyn Canyon is a stunning natural wonder with towering rock formations and vibrant colors. Take a hike through its etched landscapes and enjoy nature’s artistry, especially at sunrise or sunset when the colors are most vivid.\n\n"
-    "5. **Kolsai Lakes**: A series of stunning alpine lakes nestled between mountains, Kolsai Lakes offer breathtaking scenery and excellent hiking opportunities. The first lake is an easy hike from the parking area, while the second lake requires a bit more effort but rewards visitors with tranquility and stunning views.\n\n"
-    "6. **Issyk Lake**: A beautiful glacial lake located in the Trans-Ili Alatau Mountains, known for its stunning turquoise color. The lake is surrounded by majestic peaks and is a great spot for picnicking and hiking. The area also has a rich history, with ancient burial mounds dating back to the Saka period."
-),
+            "📅 *Itinerary*\n\n"
+            "1. **City Tour of Almaty**: Explore the vibrant city's key sights, including the Medeu Ice Skating Rink, the world's highest ice rink located in a scenic valley, and the Palace of the Republic, a striking concert hall. Visit the historic Zenkov Cathedral, a stunning wooden structure in Panfilov Park, and finish the tour at the bustling Green Bazaar, filled with local food and crafts.\n\n"
+            "2. **Kok Tobe**: A picturesque hill that provides panoramic views of Almaty and the surrounding mountains. Enjoy a cable car ride to reach the top, where you can explore various attractions, including the famous Kok Tobe TV Tower and enjoy a leisurely walk through the park.\n\n"
+            "3. **Shymbulak Ski Resort**: A premier ski destination located just 25 kilometers from Almaty, known for its modern facilities and diverse slopes catering to all skill levels. Visitors can enjoy skiing, snowboarding, and breathtaking views of the surrounding peaks.\n\n"
+            "4. **Charyn Canyon**: Often referred to as Kazakhstan's Grand Canyon, Charyn Canyon is a stunning natural wonder with towering rock formations and vibrant colors. Take a hike through its etched landscapes and enjoy nature's artistry, especially at sunrise or sunset when the colors are most vivid.\n\n"
+            "5. **Kolsai Lakes**: A series of stunning alpine lakes nestled between mountains, Kolsai Lakes offer breathtaking scenery and excellent hiking opportunities. The first lake is an easy hike from the parking area, while the second lake requires a bit more effort but rewards visitors with tranquility and stunning views.\n\n"
+            "6. **Issyk Lake**: A beautiful glacial lake located in the Trans-Ili Alatau Mountains, known for its stunning turquoise color. The lake is surrounded by majestic peaks and is a great spot for picnicking and hiking. The area also has a rich history, with ancient burial mounds dating back to the Saka period."
+        ),
 
         "voice": "🎙 Please select a tour point. Voice messages will be added here.",
         "contacts": "📞 *Guide Contacts*\n\nGuide: Ayan\nPhone: +7 XXX XXX XXXX",
@@ -105,6 +103,15 @@ TEXTS = {
             "- Inform the office immediately\n"
             "- Do not give medicine unless guest confirms it is safe for them"
         ),
+
+        # Voice tour location content (placeholders)
+        "voice_panfilov":   "🌳 *Panfilov Park*\n\nVoice tour for Panfilov Park will be available here soon.",
+        "voice_greenbazaar":"🛒 *Green Bazaar*\n\nVoice tour for Green Bazaar will be available here soon.",
+        "voice_koktobe":    "🏔 *Kok Tobe*\n\nVoice tour for Kok Tobe will be available here soon.",
+        "voice_shymbulak":  "⛷ *Shymbulak Ski Resort*\n\nVoice tour for Shymbulak will be available here soon.",
+        "voice_charyn":     "🏜 *Charyn Canyon*\n\nVoice tour for Charyn Canyon will be available here soon.",
+        "voice_kolsai":     "💧 *Kolsai Lakes*\n\nVoice tour for Kolsai Lakes will be available here soon.",
+        "voice_issyk":      "🌊 *Issyk Lake*\n\nVoice tour for Issyk Lake will be available here soon.",
     },
 
     "ru": {
@@ -129,9 +136,11 @@ TEXTS = {
 
         "tourist_menu":   "Меню туриста:",
         "guide_menu":     "Меню гида:",
+
+        # Audio tour menu
         "btn_voice_menu_title": "🎙 Выберите локацию для аудиотура:",
         "btn_panfilov":   "🌳 Парк Панфилова",
-        "btn_greenbazaar": "🛒 Зелёный базар",
+        "btn_greenbazaar":"🛒 Зелёный базар",
         "btn_koktobe":    "🏔 Кок-Тобе",
         "btn_shymbulak":  "⛷ Шымбулак",
         "btn_charyn":     "🏜 Каньон Чарын",
@@ -139,17 +148,15 @@ TEXTS = {
         "btn_issyk":      "🌊 Озеро Иссык",
         "btn_back_voice": "⬅ Назад",
 
-        
-
         "itinerary": (
-    "📅 *Маршрут*\n\n"
-    "1. **Обзорная экскурсия по Алматы**: Исследуйте основные достопримечательности яркого города, включая каток Медеу, расположенный в живописной долине и являющийся самым высоким в мире, и Дворец Республики, впечатляющий концертный зал. Посетите исторический храм Зенкова — красивое деревянное строение в панфиловском парке, и завершите экскурсию на оживлённом Зеленом Базаре, полном местной еды и ремесел.\n\n"
-    "2. **Кок-Тобе**: Красивый холм, который предлагает панорамные виды на Алматы и окружающие горы. Наслаждайтесь поездкой на канатной дороге, чтобы добраться до вершины, где вы можете исследовать различные достопримечательности, включая знаменитую телебашню Кок-Тобе, и прогуляться по парку.\n\n"
-    "3. **Горнолыжный курорт Шымбулак**: Премиум-курорт для лыжников, расположенный всего в 25 километрах от Алматы, известен своими современными удобствами и разнообразными склонами для лыжников любого уровня подготовки. Посетители могут наслаждаться лыжным спортом, сноубордингом и захватывающими видами на окружающие вершины.\n\n"
-    "4. **Каньон Чарын**: Часто называют 'Казахским Гранд Каньоном', каньон Чарын — это потрясающее природное чудо с высокими скальными образованиями и яркими цветами. Пройдите по его вырезанным пейзажам и наслаждайтесь искусством природы, особенно на рассвете или закате, когда цвета наиболее яркие.\n\n"
-    "5. **Озера Кольсай**: Серия потрясающих альпийских озер, расположенных между горами. Озера Кольсай предлагают захватывающие пейзажи и отличные возможности для хайкинга. Первое озеро легко достигнуть от парковки, а для второго потребуется немного больше усилий, но вы будете вознаграждены спокойствием и потрясающими видами.\n\n"
-    "6. **Озеро Иссык**: Красивое ледниковое озеро, расположенное в горном массиве Заилийский Алатау, известное своим удивительным бирюзовым цветом. Озеро окружено величественными вершинами и отлично подходит для пикников и хайкинга. Этот район также богат историей, с древними курганами, относящимися к сакскому периоду."
-),
+            "📅 *Маршрут*\n\n"
+            "1. **Обзорная экскурсия по Алматы**: Исследуйте основные достопримечательности яркого города, включая каток Медеу, расположенный в живописной долине и являющийся самым высоким в мире, и Дворец Республики, впечатляющий концертный зал. Посетите исторический храм Зенкова — красивое деревянное строение в панфиловском парке, и завершите экскурсию на оживлённом Зеленом Базаре, полном местной еды и ремесел.\n\n"
+            "2. **Кок-Тобе**: Красивый холм, который предлагает панорамные виды на Алматы и окружающие горы. Наслаждайтесь поездкой на канатной дороге, чтобы добраться до вершины, где вы можете исследовать различные достопримечательности, включая знаменитую телебашню Кок-Тобе, и прогуляться по парку.\n\n"
+            "3. **Горнолыжный курорт Шымбулак**: Премиум-курорт для лыжников, расположенный всего в 25 километрах от Алматы, известен своими современными удобствами и разнообразными склонами для лыжников любого уровня подготовки. Посетители могут наслаждаться лыжным спортом, сноубордингом и захватывающими видами на окружающие вершины.\n\n"
+            "4. **Каньон Чарын**: Часто называют 'Казахским Гранд Каньоном', каньон Чарын — это потрясающее природное чудо с высокими скальными образованиями и яркими цветами. Пройдите по его вырезанным пейзажам и наслаждайтесь искусством природы, особенно на рассвете или закате, когда цвета наиболее яркие.\n\n"
+            "5. **Озера Кольсай**: Серия потрясающих альпийских озер, расположенных между горами. Озера Кольсай предлагают захватывающие пейзажи и отличные возможности для хайкинга. Первое озеро легко достигнуть от парковки, а для второго потребуется немного больше усилий, но вы будете вознаграждены спокойствием и потрясающими видами.\n\n"
+            "6. **Озеро Иссык**: Красивое ледниковое озеро, расположенное в горном массиве Заилийский Алатау, известное своим удивительным бирюзовым цветом. Озеро окружено величественными вершинами и отлично подходит для пикников и хайкинга. Этот район также богат историей, с древними курганами, относящимися к сакскому периоду."
+        ),
 
         "voice": "🎙 Выберите точку тура. Голосовые сообщения будут добавлены здесь.",
         "contacts": "📞 *Контакты гида*\n\nГид: Аян\nТелефон: +7 XXX XXX XXXX",
@@ -182,9 +189,18 @@ TEXTS = {
             "🩺 *Первая помощь*\n\n"
             "- В случае ЧП: звоните 112\n"
             "- Сохраняйте спокойствие в группе\n"
-            "- Немедленно сообщите в офис \n"
+            "- Немедленно сообщите в офис\n"
             "- Не давайте лекарства, пока гость не подтвердит безопасность"
         ),
+
+        # Voice tour location content (placeholders)
+        "voice_panfilov":   "🌳 *Парк Панфилова*\n\nАудиотур по Парку Панфилова скоро будет доступен здесь.",
+        "voice_greenbazaar":"🛒 *Зелёный базар*\n\nАудиотур по Зелёному базару скоро будет доступен здесь.",
+        "voice_koktobe":    "🏔 *Кок-Тобе*\n\nАудиотур по Кок-Тобе скоро будет доступен здесь.",
+        "voice_shymbulak":  "⛷ *Шымбулак*\n\nАудиотур по Шымбулаку скоро будет доступен здесь.",
+        "voice_charyn":     "🏜 *Каньон Чарын*\n\nАудиотур по Каньону Чарын скоро будет доступен здесь.",
+        "voice_kolsai":     "💧 *Озёра Кольсай*\n\nАудиотур по Озёрам Кольсай скоро будет доступен здесь.",
+        "voice_issyk":      "🌊 *Озеро Иссык*\n\nАудиотур по Озеру Иссык скоро будет доступен здесь.",
     },
 
     "kk": {
@@ -209,28 +225,28 @@ TEXTS = {
 
         "tourist_menu":   "Турист мәзірі:",
         "guide_menu":     "Гид мәзірі:",
+
+        # Audio tour menu
         "btn_voice_menu_title": "🎙 Аудиотур үшін орынды таңдаңыз:",
         "btn_panfilov":   "🌳 Панфилов саябағы",
-        "btn_greenbazaar": "🛒 Жасыл базар",
+        "btn_greenbazaar":"🛒 Жасыл базар",
         "btn_koktobe":    "🏔 Кок-Тобе",
         "btn_shymbulak":  "⛷ Шымбұлақ",
         "btn_charyn":     "🏜 Шарын каньоны",
         "btn_kolsai":     "💧 Көлсай көлдері",
         "btn_issyk":      "🌊 Ыссық көл",
         "btn_back_voice": "⬅ Артқа",
-        
 
         "itinerary": (
-    "📅 *Маршрут*\n\n"
-    "1. **Алматы қаласына экскурсия**: Жанды қаланың басты көрнекті орындарын зерттеңіз, соның ішінде Медеу мұз айдынын, керемет көркем алқапта орналасқан әлемнің ең жоғары мұз айдынын, және Республика сарайын, тамаша концерт залы. Панфилов паркіндегі Зенков соборына барып, жергілікті тамақтар мен қолөнер бұйымдарымен толтырылған Жасыл базарда экскурсияны аяқтаңыз.\n\n"
-    "2. **Кок-Тобе**: Алматы мен айналасындағы таулардың панорамалық көріністерін ұсынатын көркем төбе. Төбеге жету үшін канат жолымен көтеріліп, әйгілі Кок-Тобе телеқабылдағышы мен парктің бойымен серуендеуді тамашалаңыз.\n\n"
-    "3. **Шымбулак тау-шаңғы курорты**: Алматыдан небәрі 25 шақырым жерде орналасқан үздік шаңғы орны, заманауи құрал-жабдықтарымен және түрлі деңгейдегі шаңғы жолдарымен танымал. Қонақтар шаңғы тебу, сноубордпен сырғанау мен таулардың керемет көріністерін тамашалай алады.\n\n"
-    "4. **Шарын каньоны**: Қазақстанның Гранд Каньоны деп аталатын Шарын каньоны — бұл таудағы таңғажайып табиғи көрініс, жоғары тастар мен жарқын түстермен. Ол арқылы серуендеп, кешкісін немесе таңыда түстердің ең айқын сәттерін тамашалаңыз.\n\n"
-    "5. **Көлсай көлдері**: Тау арасында орналасқан керемет альпілік көлдердің сериясы, Көлсай көлдері керемет көріністер мен тамаша серуендеу мүмкіндіктерін ұсынады. Бірінші көлге автотұрақтан оңай жетуге болады, екінші көлге жету үшін біраз күш жұмсау керек, бірақ тыныштық пен керемет көрініс ұсынады.\n\n"
-    "6. **Ыссық көл**: Заилий Алатау тауларындағы әдемі мұздық көл, таңғажайып көгілдір түсімен танымал. Көл аспаннан көркем шыңдармен қоршалған, пикник жасау мен серуендеу үшін тамаша орын. Бұл аймақта сол саналы заманауи кезеңіне тиесілі көне қорымдар бар."
-),
+            "📅 *Маршрут*\n\n"
+            "1. **Алматы қаласына экскурсия**: Жанды қаланың басты көрнекті орындарын зерттеңіз, соның ішінде Медеу мұз айдынын, керемет көркем алқапта орналасқан әлемнің ең жоғары мұз айдынын, және Республика сарайын, тамаша концерт залы. Панфилов паркіндегі Зенков соборына барып, жергілікті тамақтар мен қолөнер бұйымдарымен толтырылған Жасыл базарда экскурсияны аяқтаңыз.\n\n"
+            "2. **Кок-Тобе**: Алматы мен айналасындағы таулардың панорамалық көріністерін ұсынатын көркем төбе. Төбеге жету үшін канат жолымен көтеріліп, әйгілі Кок-Тобе телеқабылдағышы мен парктің бойымен серуендеуді тамашалаңыз.\n\n"
+            "3. **Шымбулак тау-шаңғы курорты**: Алматыдан небәрі 25 шақырым жерде орналасқан үздік шаңғы орны, заманауи құрал-жабдықтарымен және түрлі деңгейдегі шаңғы жолдарымен танымал. Қонақтар шаңғы тебу, сноубордпен сырғанау мен таулардың керемет көріністерін тамашалай алады.\n\n"
+            "4. **Шарын каньоны**: Қазақстанның Гранд Каньоны деп аталатын Шарын каньоны — бұл таудағы таңғажайып табиғи көрініс, жоғары тастар мен жарқын түстермен. Ол арқылы серуендеп, кешкісін немесе таңыда түстердің ең айқын сәттерін тамашалаңыз.\n\n"
+            "5. **Көлсай көлдері**: Тау арасында орналасқан керемет альпілік көлдердің сериясы, Көлсай көлдері керемет көріністер мен тамаша серуендеу мүмкіндіктерін ұсынады. Бірінші көлге автотұрақтан оңай жетуге болады, екінші көлге жету үшін біраз күш жұмсау керек, бірақ тыныштық пен керемет көрініс ұсынады.\n\n"
+            "6. **Ыссық көл**: Заилий Алатау тауларындағы әдемі мұздық көл, таңғажайып көгілдір түсімен танымал. Көл аспаннан көркем шыңдармен қоршалған, пикник жасау мен серуендеу үшін тамаша орын. Бұл аймақта сол саналы заманауи кезеңіне тиесілі көне қорымдар бар."
+        ),
 
-        
         "voice": "🎙 Тур нүктесін таңдаңыз. Дыбыстық хабарлар осында қосылады.",
         "contacts": "📞 *Гид байланыстары*\n\nГид: Аян\nТелефон: +7 XXX XXX XXXX",
         "faq": (
@@ -265,6 +281,15 @@ TEXTS = {
             "- Кеңсесіне дереу хабарлаңыз\n"
             "- Қонақ растамаса дәрі бермеңіз"
         ),
+
+        # Voice tour location content (placeholders)
+        "voice_panfilov":   "🌳 *Панфилов саябағы*\n\nПанфилов саябағына арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_greenbazaar":"🛒 *Жасыл базар*\n\nЖасыл базарға арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_koktobe":    "🏔 *Кок-Тобе*\n\nКок-Тобеге арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_shymbulak":  "⛷ *Шымбұлақ*\n\nШымбұлаққа арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_charyn":     "🏜 *Шарын каньоны*\n\nШарын каньонына арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_kolsai":     "💧 *Көлсай көлдері*\n\nКөлсай көлдеріне арналған аудиотур жақында осында қолжетімді болады.",
+        "voice_issyk":      "🌊 *Ыссық көл*\n\nЫссық көлге арналған аудиотур жақында осында қолжетімді болады.",
     },
 }
 
@@ -310,6 +335,19 @@ def guide_keyboard(lang: str) -> ReplyKeyboardMarkup:
             [KeyboardButton(text=t["btn_history"])],
             [KeyboardButton(text=t["btn_firstaid"])],
             [KeyboardButton(text=t["btn_back"])],
+        ],
+        resize_keyboard=True
+    )
+
+def voice_keyboard(lang: str) -> ReplyKeyboardMarkup:
+    t = TEXTS[lang]
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text=t["btn_panfilov"]),   KeyboardButton(text=t["btn_greenbazaar"])],
+            [KeyboardButton(text=t["btn_koktobe"]),    KeyboardButton(text=t["btn_shymbulak"])],
+            [KeyboardButton(text=t["btn_charyn"]),     KeyboardButton(text=t["btn_kolsai"])],
+            [KeyboardButton(text=t["btn_issyk"])],
+            [KeyboardButton(text=t["btn_back_voice"])],
         ],
         resize_keyboard=True
     )
@@ -393,8 +431,62 @@ async def itinerary(message: Message):
 @dp.message(F.text.in_({"🎙 AI Voice Tours", "🎙 AI Аудиогиды", "🎙 AI Дыбыстық тур"}))
 async def voice_tours(message: Message):
     uid = message.from_user.id
-    await message.answer(get_text(uid, "voice"))
+    lang = get_lang(uid)
+    await message.answer(
+        TEXTS[lang]["btn_voice_menu_title"],
+        reply_markup=voice_keyboard(lang)
+    )
 
+# ─────────────────────────────────────────────
+# HANDLERS — Voice Tour Back Button
+# ─────────────────────────────────────────────
+@dp.message(F.text.in_({"⬅ Back", "⬅ Назад", "⬅ Артқа"}))
+async def back_from_voice(message: Message):
+    uid = message.from_user.id
+    lang = get_lang(uid)
+    await message.answer(TEXTS[lang]["tourist_menu"], reply_markup=tourist_keyboard(lang))
+
+# ─────────────────────────────────────────────
+# HANDLERS — Voice Tour Locations
+# ─────────────────────────────────────────────
+@dp.message(F.text.in_({"🌳 Panfilov Park", "🌳 Парк Панфилова", "🌳 Панфилов саябағы"}))
+async def voice_panfilov(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_panfilov"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"🛒 Green Bazaar", "🛒 Зелёный базар", "🛒 Жасыл базар"}))
+async def voice_greenbazaar(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_greenbazaar"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"🏔 Kok Tobe", "🏔 Кок-Тобе"}))
+async def voice_koktobe(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_koktobe"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"⛷ Shymbulak Ski Resort", "⛷ Шымбулак", "⛷ Шымбұлақ"}))
+async def voice_shymbulak(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_shymbulak"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"🏜 Charyn Canyon", "🏜 Каньон Чарын", "🏜 Шарын каньоны"}))
+async def voice_charyn(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_charyn"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"💧 Kolsai Lakes", "💧 Озёра Кольсай", "💧 Көлсай көлдері"}))
+async def voice_kolsai(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_kolsai"), parse_mode="Markdown")
+
+@dp.message(F.text.in_({"🌊 Issyk Lake", "🌊 Озеро Иссык", "🌊 Ыссық көл"}))
+async def voice_issyk(message: Message):
+    uid = message.from_user.id
+    await message.answer(get_text(uid, "voice_issyk"), parse_mode="Markdown")
+
+# ─────────────────────────────────────────────
+# HANDLERS — Guide Menu Items
+# ─────────────────────────────────────────────
 @dp.message(F.text.in_({"📞 Guide Contacts", "📞 Контакты гида", "📞 Гид байланыстары"}))
 async def guide_contacts(message: Message):
     uid = message.from_user.id
@@ -410,9 +502,6 @@ async def emergency(message: Message):
     uid = message.from_user.id
     await message.answer(get_text(uid, "emergency"), parse_mode="Markdown")
 
-# ─────────────────────────────────────────────
-# HANDLERS — Guide Menu Items
-# ─────────────────────────────────────────────
 @dp.message(F.text.in_({"🚗 Driver Details", "🚗 Данные водителя", "🚗 Жүргізуші деректері"}))
 async def driver_details(message: Message):
     uid = message.from_user.id

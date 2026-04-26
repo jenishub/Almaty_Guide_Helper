@@ -49,13 +49,15 @@ TEXTS = {
 
         # Content
         "itinerary": (
-            "📅 *Itinerary*\n\n"
-            "Day 1: Arrival + transfer to hotel\n"
-            "Day 2: Kok Tobe + Green Bazaar\n"
-            "Day 3: City Tour\n"
-            "Day 4: Shymbulak\n"
-            "Day 5: Airport transfer"
-        ),
+    "📅 *Itinerary*\n\n"
+    "1. **City Tour of Almaty**: Explore the vibrant city's key sights, including the Medeu Ice Skating Rink, the world’s highest ice rink located in a scenic valley, and the Palace of the Republic, a striking concert hall. Visit the historic Zenkov Cathedral, a stunning wooden structure in Panfilov Park, and finish the tour at the bustling Green Bazaar, filled with local food and crafts.\n\n"
+    "2. **Kok Tobe**: A picturesque hill that provides panoramic views of Almaty and the surrounding mountains. Enjoy a cable car ride to reach the top, where you can explore various attractions, including the famous Kok Tobe TV Tower and enjoy a leisurely walk through the park.\n\n"
+    "3. **Shymbulak Ski Resort**: A premier ski destination located just 25 kilometers from Almaty, known for its modern facilities and diverse slopes catering to all skill levels. Visitors can enjoy skiing, snowboarding, and breathtaking views of the surrounding peaks.\n\n"
+    "4. **Charyn Canyon**: Often referred to as Kazakhstan's Grand Canyon, Charyn Canyon is a stunning natural wonder with towering rock formations and vibrant colors. Take a hike through its etched landscapes and enjoy nature’s artistry, especially at sunrise or sunset when the colors are most vivid.\n\n"
+    "5. **Kolsai Lakes**: A series of stunning alpine lakes nestled between mountains, Kolsai Lakes offer breathtaking scenery and excellent hiking opportunities. The first lake is an easy hike from the parking area, while the second lake requires a bit more effort but rewards visitors with tranquility and stunning views.\n\n"
+    "6. **Issyk Lake**: A beautiful glacial lake located in the Trans-Ili Alatau Mountains, known for its stunning turquoise color. The lake is surrounded by majestic peaks and is a great spot for picnicking and hiking. The area also has a rich history, with ancient burial mounds dating back to the Saka period."
+),
+
         "voice": "🎙 Please select a tour point. Voice messages will be added here.",
         "contacts": "📞 *Guide Contacts*\n\nGuide: Ayan\nPhone: +7 XXX XXX XXXX",
         "faq": (
@@ -116,13 +118,15 @@ TEXTS = {
         "guide_menu":     "Меню гида:",
 
         "itinerary": (
-            "📅 *Маршрут*\n\n"
-            "День 1: Прибытие + трансфер в отель\n"
-            "День 2: Кок-Тобе + Зелёный базар\n"
-            "День 3: Обзорная экскурсия по городу\n"
-            "День 4: Шымбулак\n"
-            "День 5: Трансфер в аэропорт"
-        ),
+    "📅 *Маршрут*\n\n"
+    "1. **Обзорная экскурсия по Алматы**: Исследуйте основные достопримечательности яркого города, включая каток Медеу, расположенный в живописной долине и являющийся самым высоким в мире, и Дворец Республики, впечатляющий концертный зал. Посетите исторический храм Зенкова — красивое деревянное строение в панфиловском парке, и завершите экскурсию на оживлённом Зеленом Базаре, полном местной еды и ремесел.\n\n"
+    "2. **Кок-Тобе**: Красивый холм, который предлагает панорамные виды на Алматы и окружающие горы. Наслаждайтесь поездкой на канатной дороге, чтобы добраться до вершины, где вы можете исследовать различные достопримечательности, включая знаменитую телебашню Кок-Тобе, и прогуляться по парку.\n\n"
+    "3. **Горнолыжный курорт Шымбулак**: Премиум-курорт для лыжников, расположенный всего в 25 километрах от Алматы, известен своими современными удобствами и разнообразными склонами для лыжников любого уровня подготовки. Посетители могут наслаждаться лыжным спортом, сноубордингом и захватывающими видами на окружающие вершины.\n\n"
+    "4. **Каньон Чарын**: Часто называют 'Казахским Гранд Каньоном', каньон Чарын — это потрясающее природное чудо с высокими скальными образованиями и яркими цветами. Пройдите по его вырезанным пейзажам и наслаждайтесь искусством природы, особенно на рассвете или закате, когда цвета наиболее яркие.\n\n"
+    "5. **Озера Кольсай**: Серия потрясающих альпийских озер, расположенных между горами. Озера Кольсай предлагают захватывающие пейзажи и отличные возможности для хайкинга. Первое озеро легко достигнуть от парковки, а для второго потребуется немного больше усилий, но вы будете вознаграждены спокойствием и потрясающими видами.\n\n"
+    "6. **Озеро Иссык**: Красивое ледниковое озеро, расположенное в горном массиве Заилийский Алатау, известное своим удивительным бирюзовым цветом. Озеро окружено величественными вершинами и отлично подходит для пикников и хайкинга. Этот район также богат историей, с древними курганами, относящимися к сакскому периоду."
+),
+
         "voice": "🎙 Выберите точку тура. Голосовые сообщения будут добавлены здесь.",
         "contacts": "📞 *Контакты гида*\n\nГид: Аян\nТелефон: +7 XXX XXX XXXX",
         "faq": (
@@ -183,12 +187,15 @@ TEXTS = {
         "guide_menu":     "Гид мәзірі:",
 
         "itinerary": (
-            "📅 *Маршрут*\n\n"
-            "1-күн: Жету + қонақүйге трансфер\n"
-            "2-күн: Кок-Тобе + Жасыл базар\n"
-            "3-күн: Қала бойынша экскурсия\n"
-            "4-күн: Шымбұлақ\n"
-            "5-күн: Әуежайға трансфер"
+    "📅 *Маршрут*\n\n"
+    "1. **Алматы қаласына экскурсия**: Жанды қаланың басты көрнекті орындарын зерттеңіз, соның ішінде Медеу мұз айдынын, керемет көркем алқапта орналасқан әлемнің ең жоғары мұз айдынын, және Республика сарайын, тамаша концерт залы. Панфилов паркіндегі Зенков соборына барып, жергілікті тамақтар мен қолөнер бұйымдарымен толтырылған Жасыл базарда экскурсияны аяқтаңыз.\n\n"
+    "2. **Кок-Тобе**: Алматы мен айналасындағы таулардың панорамалық көріністерін ұсынатын көркем төбе. Төбеге жету үшін канат жолымен көтеріліп, әйгілі Кок-Тобе телеқабылдағышы мен парктің бойымен серуендеуді тамашалаңыз.\n\n"
+    "3. **Шымбулак тау-шаңғы курорты**: Алматыдан небәрі 25 шақырым жерде орналасқан үздік шаңғы орны, заманауи құрал-жабдықтарымен және түрлі деңгейдегі шаңғы жолдарымен танымал. Қонақтар шаңғы тебу, сноубордпен сырғанау мен таулардың керемет көріністерін тамашалай алады.\n\n"
+    "4. **Шарын каньоны**: Қазақстанның Гранд Каньоны деп аталатын Шарын каньоны — бұл таудағы таңғажайып табиғи көрініс, жоғары тастар мен жарқын түстермен. Ол арқылы серуендеп, кешкісін немесе таңыда түстердің ең айқын сәттерін тамашалаңыз.\n\n"
+    "5. **Көлсай көлдері**: Тау арасында орналасқан керемет альпілік көлдердің сериясы, Көлсай көлдері керемет көріністер мен тамаша серуендеу мүмкіндіктерін ұсынады. Бірінші көлге автотұрақтан оңай жетуге болады, екінші көлге жету үшін біраз күш жұмсау керек, бірақ тыныштық пен керемет көрініс ұсынады.\n\n"
+    "6. **Ыссық көл**: Заилий Алатау тауларындағы әдемі мұздық көл, таңғажайып көгілдір түсімен танымал. Көл аспаннан көркем шыңдармен қоршалған, пикник жасау мен серуендеу үшін тамаша орын. Бұл аймақта сол саналы заманауи кезеңіне тиесілі көне қорымдар бар."
+),
+
         ),
         "voice": "🎙 Тур нүктесін таңдаңыз. Дыбыстық хабарлар осында қосылады.",
         "contacts": "📞 *Гид байланыстары*\n\nГид: Аян\nТелефон: +7 XXX XXX XXXX",

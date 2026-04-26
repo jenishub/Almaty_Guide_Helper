@@ -47,6 +47,19 @@ TEXTS = {
         "tourist_menu":   "Tourist menu:",
         "guide_menu":     "Guide menu:",
 
+         # Audio tour menu
+        "btn_voice_menu_title": "🎙 Select a location for your audio tour:",
+        "btn_panfilov":   "🌳 Panfilov Park",
+        "btn_greenbazaar":"🛒 Green Bazaar",
+        "btn_koktobe":    "🏔 Kok Tobe",
+        "btn_shymbulak":  "⛷ Shymbulak Ski Resort",
+        "btn_charyn":     "🏜 Charyn Canyon",
+        "btn_kolsai":     "💧 Kolsai Lakes",
+        "btn_issyk":      "🌊 Issyk Lake",
+        "btn_back_voice": "⬅ Back",
+
+        
+
         # Content
         "itinerary": (
     "📅 *Itinerary*\n\n"
@@ -116,6 +129,17 @@ TEXTS = {
 
         "tourist_menu":   "Меню туриста:",
         "guide_menu":     "Меню гида:",
+        "btn_voice_menu_title": "🎙 Выберите локацию для аудиотура:",
+        "btn_panfilov":   "🌳 Парк Панфилова",
+        "btn_greenbazaar": "🛒 Зелёный базар",
+        "btn_koktobe":    "🏔 Кок-Тобе",
+        "btn_shymbulak":  "⛷ Шымбулак",
+        "btn_charyn":     "🏜 Каньон Чарын",
+        "btn_kolsai":     "💧 Озёра Кольсай",
+        "btn_issyk":      "🌊 Озеро Иссык",
+        "btn_back_voice": "⬅ Назад",
+
+        
 
         "itinerary": (
     "📅 *Маршрут*\n\n"
@@ -185,6 +209,16 @@ TEXTS = {
 
         "tourist_menu":   "Турист мәзірі:",
         "guide_menu":     "Гид мәзірі:",
+        "btn_voice_menu_title": "🎙 Аудиотур үшін орынды таңдаңыз:",
+        "btn_panfilov":   "🌳 Панфилов саябағы",
+        "btn_greenbazaar": "🛒 Жасыл базар",
+        "btn_koktobe":    "🏔 Кок-Тобе",
+        "btn_shymbulak":  "⛷ Шымбұлақ",
+        "btn_charyn":     "🏜 Шарын каньоны",
+        "btn_kolsai":     "💧 Көлсай көлдері",
+        "btn_issyk":      "🌊 Ыссық көл",
+        "btn_back_voice": "⬅ Артқа",
+        
 
         "itinerary": (
     "📅 *Маршрут*\n\n"

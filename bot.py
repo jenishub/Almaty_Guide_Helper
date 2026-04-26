@@ -20,7 +20,7 @@ user_role = {}
 TEXTS = {
     "en": {
         # Language selection
-        "choose_lang": "Welcome to JABE Tour Assistant!\nPlease choose your language:",
+        "choose_lang": "Welcome to Almaty Guide & Helper!\nPlease choose your language:",
 
         # Role selection
         "choose_role": "Please choose your role:",
@@ -67,7 +67,7 @@ TEXTS = {
         "emergency": (
             "🚨 *Emergency / Support*\n\n"
             "Emergency number: 112\n"
-            "JABE Support: +7 XXX XXX XXXX\n"
+            "Support: +7 XXX XXX XXXX\n"
             "Please stay calm and contact your guide immediately."
         ),
         "driver": (
@@ -87,13 +87,13 @@ TEXTS = {
             "🩺 *First Aid Information*\n\n"
             "- For emergency: call 112\n"
             "- Keep group calm\n"
-            "- Inform JABE office immediately\n"
+            "- Inform the office immediately\n"
             "- Do not give medicine unless guest confirms it is safe for them"
         ),
     },
 
     "ru": {
-        "choose_lang": "Добро пожаловать в JABE Tour Assistant!\nПожалуйста, выберите язык:",
+        "choose_lang": "Добро пожаловать в Almaty Guide & Helper!\nПожалуйста, выберите язык:",
 
         "choose_role": "Пожалуйста, выберите вашу роль:",
         "btn_tourist": "🧳 Я Турист",
@@ -134,7 +134,7 @@ TEXTS = {
         "emergency": (
             "🚨 *Экстренная помощь*\n\n"
             "Номер экстренной службы: 112\n"
-            "Поддержка JABE: +7 XXX XXX XXXX\n"
+            "Поддержка: +7 XXX XXX XXXX\n"
             "Сохраняйте спокойствие и немедленно свяжитесь с гидом."
         ),
         "driver": (
@@ -154,13 +154,13 @@ TEXTS = {
             "🩺 *Первая помощь*\n\n"
             "- В случае ЧП: звоните 112\n"
             "- Сохраняйте спокойствие в группе\n"
-            "- Немедленно сообщите в офис JABE\n"
+            "- Немедленно сообщите в офис \n"
             "- Не давайте лекарства, пока гость не подтвердит безопасность"
         ),
     },
 
     "kk": {
-        "choose_lang": "JABE Tour Assistant-қа қош келдіңіз!\nТілді таңдаңыз:",
+        "choose_lang": "Almaty Guide & Helper чат-ботқа қош келдіңіз!\nТілді таңдаңыз:",
 
         "choose_role": "Рөліңізді таңдаңыз:",
         "btn_tourist": "🧳 Мен Турист",
@@ -201,7 +201,7 @@ TEXTS = {
         "emergency": (
             "🚨 *Жедел жәрдем*\n\n"
             "Жедел қызмет нөмірі: 112\n"
-            "JABE қолдауы: +7 XXX XXX XXXX\n"
+            "Қолдау: +7 XXX XXX XXXX\n"
             "Сабырлы болыңыз және гидіңізбен дереу байланысыңыз."
         ),
         "driver": (
@@ -221,7 +221,7 @@ TEXTS = {
             "🩺 *Алғашқы жәрдем*\n\n"
             "- Төтенше жағдайда: 112-ге қоңырау шалыңыз\n"
             "- Топты сабырлы ұстаңыз\n"
-            "- JABE кеңсесіне дереу хабарлаңыз\n"
+            "- Кеңсесіне дереу хабарлаңыз\n"
             "- Қонақ растамаса дәрі бермеңіз"
         ),
     },
@@ -288,7 +288,7 @@ def get_text(user_id: int, key: str) -> str:
 @dp.message(CommandStart())
 async def start(message: Message):
     await message.answer(
-        "Welcome to JABE Tour Assistant!\n"
+        "Welcome to Almaty Guide & Helper!\n"
         "Добро пожаловать! / Қош келдіңіз!\n\n"
         "Please choose your language / Выберите язык / Тілді таңдаңыз:",
         reply_markup=lang_keyboard

@@ -42,9 +42,6 @@ TEXTS = {
         "btn_faq":          "FAQ",
         "btn_emergency":    "Emergency / Support",
         "btn_back":         "Back to Menu",
-        "btn_my_tours":     "My Tours",
-        "btn_earnings":     "My Earnings",
-        "btn_schedule":     "My Schedule",
         "btn_driver":       "Driver Details",
         "btn_hist_details": "Tour Historical Details",
         "btn_first_aid":    "First Aid Info",
@@ -62,7 +59,6 @@ TEXTS = {
         "faq":              "FAQ:\n\nQ: How do I book a tour?\nA: Contact our guides directly.\n\nQ: Is the app free?\nA: Yes, completely free!",
         "emergency":        "Emergency / Support:\n\nPolice: 102\nAmbulance: 103\nFire: 101",
 
-        # ── TOURIST ITINERARY ──────────────────────────────────────────────
         "itinerary": (
             "Almaty Tour Itinerary\n\n"
             "1. Panfilov Park\n"
@@ -81,7 +77,6 @@ TEXTS = {
             "Almaty's most vibrant traditional market. Packed with fresh fruits, vegetables, spices, meats, and authentic Kazakh foods under one roof. The best place to taste local flavors and experience real city life."
         ),
 
-        # ── GUIDE: DRIVER DETAILS ──────────────────────────────────────────
         "driver_details": (
             "Driver Details\n\n"
             "Company: Royal Transfer\n"
@@ -90,7 +85,6 @@ TEXTS = {
             "Ensure the driver is informed at least 30 minutes before each departure."
         ),
 
-        # ── GUIDE: HISTORICAL DETAILS ──────────────────────────────────────
         "hist_panfilov": (
             "Panfilov Park - Historical Details\n\n"
             "Panfilov Park was established in the late 19th century during the Russian Imperial period, originally called Pushkin Park. "
@@ -172,7 +166,6 @@ TEXTS = {
             "It remains one of the most authentic cultural experiences in the city."
         ),
 
-        # ── GUIDE: FIRST AID ───────────────────────────────────────────────
         "first_aid": (
             "First Aid Information for Tour Guides\n\n"
             "EMERGENCY NUMBERS:\n"
@@ -234,7 +227,6 @@ TEXTS = {
             "scissors, tweezers, ibuprofen, rehydration salts, emergency blanket, whistle."
         ),
 
-        # ── GUIDE: TICKET DATABASE ─────────────────────────────────────────
         "tickets": (
             "Ticket Database\n\n"
             "Shymbulak Ski Resort\n"
@@ -246,7 +238,6 @@ TEXTS = {
             "Note: Always check the official websites for the most up-to-date pricing, seasonal availability, and group booking options before your tour."
         ),
 
-        # ── VOICE TOUR CONTENT ─────────────────────────────────────────────
         "tour_panfilov":    "Panfilov Park is one of the most beloved green spaces in Almaty. Named after the heroic Panfilov soldiers of World War Two, it features the stunning Zenkov Cathedral, one of the few wooden cathedrals in the world, built without a single nail. Stroll through its tree-lined paths and enjoy the peaceful atmosphere in the heart of the city.",
         "tour_greenbazaar": "Green Bazaar, or Zelyony Bazar, is the vibrant heart of Almaty's trading culture. Here you will find fresh fruits, vegetables, spices, meats, and traditional Kazakh foods all under one roof. It is the best place to taste local flavors, interact with friendly vendors, and experience the authentic daily life of Almaty residents.",
         "tour_koktobe":     "Kok Tobe, meaning Blue Hill in Kazakh, rises 1100 meters above sea level and offers a breathtaking panoramic view of Almaty city. Accessible by a scenic cable car ride, the hilltop features amusement rides, cafes, and the famous Beatles monument. It is the perfect spot to watch the sunset over the Tian Shan mountains.",
@@ -269,9 +260,6 @@ TEXTS = {
         "btn_faq":          "Частые вопросы",
         "btn_emergency":    "Экстренная помощь",
         "btn_back":         "Назад в меню",
-        "btn_my_tours":     "Мои туры",
-        "btn_earnings":     "Мой доход",
-        "btn_schedule":     "Моё расписание",
         "btn_driver":       "Данные водителя",
         "btn_hist_details": "Исторические данные",
         "btn_first_aid":    "Первая помощь",
@@ -461,9 +449,6 @@ TEXTS = {
         "btn_faq":          "Жиі сұрақтар",
         "btn_emergency":    "Жедел жәрдем",
         "btn_back":         "Мәзірге оралу",
-        "btn_my_tours":     "Менің турларым",
-        "btn_earnings":     "Менің табысым",
-        "btn_schedule":     "Менің кестем",
         "btn_driver":       "Жүргізуші деректері",
         "btn_hist_details": "Тарихи деректер",
         "btn_first_aid":    "Алғашқы жәрдем",
@@ -571,30 +556,87 @@ TEXTS = {
         ),
         "hist_greenbazaar": (
             "Жасыл базар - Тарихи деректер\n\n"
-            "Жасыл базар, ресми атауы Зелёный базар, Алматының коммерциялық жүрегі болып табылады. "
-            "Оның түпкі негізі 19-шы ғасырдың ортасына дейін созылады, Ресей Империясы уақытында Верный әскери гарнизонының сауда орыны ретінде құрылды.\n\n"
-            "Верный қаласы 1800-ші жылдардың соңында өскен сайын базар да кеңейіп, орыс қоныс аударушылары, қазақ кочевниктері, Шыңжаңнан келген қытай саудагерлері және бүкіл Орталық Азиядан келген саудагерлер арасындағы сауда орталығына айналды. "
+            "Жасыл базар Алматының коммерциялық жүрегі болып табылады. "
+            "Оның тарихы 19-шы ғасырдың ортасына дейін созылады, Ресей Империясы уақытында Верный әскери гарнизонының сауда орыны ретінде құрылды.\n\n"
+            "Верный қаласы өскен сайын базар да кеңейіп, орыс қоныс аударушылары, қазақ көшпенділері, "
+            "Шыңжаңнан келген қытай саудагерлері және бүкіл Орталық Азиядан келген саудагерлер арасындағы сауда орталығына айналды. "
             "Негізгі тауарлар: жібек, дәмдеуіштер, мал, кептірілген жемістер және қолөнер бұйымдары.\n\n"
-            "Ағымдағы базар құрылымы 20-шы ғасырдың ортасында Кеңес дәуірінде салынды, ашық базарларды жабық нысанға ауыстырды. "
-            "Кеңес билігі базарды ауыл шаруашылығы өнімдерін тікелей қала тұрғындарына сатуға арналған мемлекеттік кооперативтер модельі ретінде пайдаланды.\n\n"
-            "1991 жылы Қазақстанның тәуелсіздігіне қол жеткізгеннен кейін, базар еркін нарық экономикасына өтті және Алматының кәсіпкерлік рухының символына айналды. "
-            "Бүгінде базар 10,000 шаршы метрден асады және жаңа өнімдер, ет, дәмдеуіштер, жаңғақтар, сүт өнімдері және дәстүрлі қазақ қолөнер бұйымдары сататын жүздеген сатушыларды қабылдайды. "
-            "Ол қаланың ең шынайы мәдени тәжірибелерінің бірі болып қала береді."
+            "Ағымдағы базар құрылымы 20-шы ғасырдың ортасында Кеңес дәуірінде салынды. "
+            "1991 жылы тәуелсіздіктен кейін базар еркін нарық экономикасына өтті. "
+            "Бүгінде базар 10,000 шаршы метрден асады және жүздеген сатушыларды қабылдайды."
         ),
 
-        # ── VOICE TOUR CONTENT ─────────────────────────────────────────────
-        "tour_panfilov":    "Панфилов саябағы — Алматының ең сүйікті жасыл аймақтарының бірі. Екінші дүниежүзілік соғыс батырлары Панфилов жауынгерлері құрметіне аталған, Вознесенский соборы — бірде-бір шегесіз салынған әлемдегі ең биік ағаш ғимарат. Саябақтың тыныш аллеялары мен жаяу жүргіншілер жолдары сізді Алматының жүрегінде серуендеуге шақырады.",
-        "tour_greenbazaar": "Жасыл базар, немесе Зелёный базар, Алматының сауда мәдениетінің жанданған орталығы. Мұнда жаңа жемістер, көкөністер, дәмдеуіштер, ет және дәстүрлі қазақ тағамдары бір шаңырақ астында. Жергілікті дәмдерді татып көру, достық сатушылармен қарым-қатынас жасау және шынайы қалалық өмірді сезіну үшін ең жақсы орын.",
-        "tour_koktobe":     "Кок-Тобе, қазақ тілінде Көк төбе, теңіз деңгейінен 1100 метр биіктікте орналасқан, Алматының тамаша панорамасын ұсынады. Канат жолымен жетуге болады, төбедегі аттракциондар, кафелер және Битлз ескерткіші сізді күтуде. Күн батқанда Тянь-Шань тауларының үстінде тамаша көрініс.",
-        "tour_shymbulak":   "Шымбулак тау-шаңғы курорты Алматыдан 25 шақырым жерде, 2200 метр биіктікте орналасқан. Бұл Орталық Азияның жетекші тау-шаңғы курорты, барлық деңгейдегі шаңғышыларға арналған керемет трассалар, заманауи гондольды көтергіш және Тянь-Шань тауларындағы көркем көріністер.",
-        "tour_charyn":      "Чарын каньоны, Қазақстанның Гранд Каньоны деп аталады, 80 шақырым бойы Шарын өзенімен созылып жатыр. Қызыл және қызғылт сары жартас пішіндері, миллиондаған жылдар бойы қалыптасқан, әлемдегі ең ерекше табиғи көріністердің бірі.",
-        "tour_kolsai":      "Көлсай көлдері — үш тамаша таулы көл жүйесі, Солтүстік Тянь-Шань тауларында орналасқан. Тығыз шырша ормандары мен қар басқан шыңдармен қоршалған, бұл жасыл көлдер жаяу жүру және табиғат сүйетіндер үшін нағыз жұмақ.",
-        "tour_issyk":       "Ыссық көл — Алматыдан 75 шақырым шығысқа қарай, 1756 метр биіктікте орналасқан тыныш таулы көл. Айналадағы таулар мен жасыл ормандармен қоршалған, бұл қаладан тыныштық іздейтіндер үшін керемет орын. Көлдің көгілдір суы мен Иссық мұражайындағы көне сақ артефактілері әйгілі."
+        "first_aid": (
+            "Алғашқы жәрдем туралы ақпарат\n\n"
+            "ЖЕДЕЛ НОМЕРЛЕР:\n"
+            "Полиция: 102 | Жедел жәрдем: 103 | Өрт: 101 | Тау құтқару: 112\n\n"
+            "--- ЖАЛПЫ ПРИНЦИПТЕР ---\n"
+            "1. Жақындамас бұрын оқиға орнының қауіпсіздігін тексеріңіз.\n"
+            "2. Ауыр жарақат алған жағдайда бірден 103 шалыңыз.\n"
+            "3. Сабырлы болыңыз және зардап шегушіні тыныштандырыңыз.\n"
+            "4. Омыртқа жарақаты күдіктелген адамды қозғамаңыз.\n\n"
+            "--- ЖЖЖ (ЖҮРЕК-ӨКП ЖАНДАНДЫРУ) ---\n"
+            "1. Реакцияны тексеріңіз — иықтарынан қағып, қатты шақырыңыз.\n"
+            "2. Бірден 103 шалыңыз.\n"
+            "3. Алақанның негізін кеуде ортасына қойыңыз.\n"
+            "4. 5-6 см тереңдікке, минутына 100-120 жылдамдықта 30 рет басыңыз.\n"
+            "5. Дағдыңыз болса — 2 жасанды тыныс, содан кейін циклды қайталаңыз.\n"
+            "6. Жедел жәрдем келгенше жалғастырыңыз.\n\n"
+            "--- ТҰНШЫҒУ ---\n"
+            "1. Жөтеле алатын болса, күшті жөтелуге ынталандырыңыз.\n"
+            "2. Жауырындар арасына 5 рет қатты соғыңыз.\n"
+            "3. Тиімсіз болса — іштен 5 рет итеріңіз (Геймлих тәсілі).\n"
+            "4. Босағанша арқаға соғу мен іштен итеруді кезектестіріңіз.\n"
+            "5. Есінен танса, 103 шалыңыз.\n\n"
+            "--- ҚАНАЮ ---\n"
+            "1. Таза мата немесе бинтпен жараны қатты басыңыз.\n"
+            "2. Матаны алмаңыз — сіңіп кетсе үстіне жаңасын салыңыз.\n"
+            "3. Мүмкін болса, жарақаттанған аяқ-қолды жүрек деңгейінен жоғары көтеріңіз.\n"
+            "4. Кем дегенде 10 минут үздіксіз қысымды ұстаңыз.\n"
+            "5. Терең жараларда медициналық көмекке жүгініңіз.\n\n"
+            "--- ТАУ АУРУЫ (Шымбулақ пен Көлсайға қатысты) ---\n"
+            "Белгілері: бас ауруы, жүрек айну, бас айналу, ентігу.\n"
+            "1. Бірден өрлеуді тоқтатыңыз.\n"
+            "2. Демалыңыз және су ішіңіз.\n"
+            "3. Нашарласа — бірден төмен биіктікке түсіңіз.\n"
+            "4. Бар болса — бас ауруына ибупрофен немесе аспирин беріңіз.\n"
+            "5. Жүре алмаса тау құтқарушыларды шақырыңыз: 112.\n\n"
+            "--- ТОҢАЗУ ---\n"
+            "Белгілері: дірілдеу, санасының шатасуы, бозарған суық тері.\n"
+            "1. Зардап шегушіні жылы паналайтын жерге апарыңыз.\n"
+            "2. Дымқыл киімді шешіп, құрғақ жылы киіммен ауыстырыңыз.\n"
+            "3. Бас пен мойынды қоса жабып жауып алыңыз.\n"
+            "4. Есі дұрыс болса жылы (ыстық емес) сусын беріңіз.\n"
+            "5. Аяқ-қолды ысқыламаңыз — асқыну қаупі бар.\n"
+            "6. Ауыр жағдайларда 103 шалыңыз.\n\n"
+            "ЕСКЕРТУ: Барлық турларда алғашқы жәрдем жиынтығын алып жүріңіз. "
+            "Ұсынылатын жиынтық: бинттер, дәке, антисептикалық майлықтар, қолғаптар, "
+            "қайшы, пинцет, ибупрофен, регидратация тұздары, термоодеял, ысқырық."
+        ),
+
+        "tickets": (
+            "Билет базасы\n\n"
+            "Шымбулак тау-шаңғы курорты\n"
+            "Ресми сайт: https://shymbulak.com\n"
+            "Ски-пасстар, гондола билеттерін сатып алу, ағымдағы бағалар мен жұмыс уақытын тексеру.\n\n"
+            "Кок-Тобе\n"
+            "Ресми сайт: https://koktobe.com\n"
+            "Канат жолы билеттерін сатып алу, парк кіру ақысын тексеру, іс-шара кестесі.\n\n"
+            "Ескерту: Турдан бұрын ресми сайттарда ағымдағы бағаларды және маусымдық қолжетімділікті тексеріңіз."
+        ),
+
+        "tour_panfilov":    "Панфилов саябағы — Алматының ең сүйікті жасыл аймақтарының бірі. Екінші дүниежүзілік соғыс батырлары Панфилов жауынгерлері құрметіне аталған. Вознесенский соборы — бірде-бір шегесіз салынған дүниедегі ең биік ағаш ғимараттардың бірі. Саябақтың тыныш аллеялары сізді Алматының жүрегінде серуендеуге шақырады.",
+        "tour_greenbazaar": "Жасыл базар — Алматының сауда мәдениетінің жанданған орталығы. Мұнда жаңа жемістер, көкөністер, дәмдеуіштер, ет және дәстүрлі қазақ тағамдары бір шаңырақ астында. Жергілікті дәмдерді татып көру және шынайы қалалық өмірді сезіну үшін ең жақсы орын.",
+        "tour_koktobe":     "Кок-Тобе, қазақ тілінде Көк төбе, теңіз деңгейінен 1100 метр биіктікте орналасқан, Алматының тамаша панорамасын ұсынады. Канат жолымен жетуге болады. Төбедегі аттракциондар, кафелер және Битлз ескерткіші сізді күтуде.",
+        "tour_shymbulak":   "Шымбулак тау-шаңғы курорты Алматыдан 25 шақырым жерде, 2200 метр биіктікте орналасқан. Орталық Азияның жетекші тау-шаңғы курорты — барлық деңгейдегі трассалар, заманауи гондольды көтергіш және Тянь-Шань тауларының керемет көрінісі.",
+        "tour_charyn":      "Шарын каньоны, Қазақстанның Гранд Каньоны деп аталады, Шарын өзені бойымен 80 шақырымға созылады. Миллиондаған жылдар бойы қалыптасқан қызыл және қызғылт сары жартас пішіндері — ең ерекше табиғи көріністердің бірі.",
+        "tour_kolsai":      "Көлсай көлдері — Солтүстік Тянь-Шань тауларындағы үш тамаша таулы көл жүйесі. Тығыз шырша ормандары мен қар басқан шыңдармен қоршалған зумрут жасыл көлдер жаяу жүргіншілер мен табиғат сүйгіштеріне арналған жұмақ.",
+        "tour_issyk":       "Ыссық көл — Алматыдан 75 шақырым шығысқа қарай, 1756 метр биіктікте орналасқан тыныш таулы көл. Айналадағы таулар мен жасыл ормандармен қоршалған, бұл тыныштық іздейтіндер үшін тамаша орын. Бирюза суы мен сақ артефактілері бар Иссық мұражайымен атақты.",
     }
 }
 
 # ─────────────────────────────────────────────
-# KEYBOARD SETUP
+# KEYBOARDS
 # ─────────────────────────────────────────────
 lang_keyboard = ReplyKeyboardMarkup(
     keyboard=[
@@ -631,11 +673,9 @@ def guide_keyboard(lang: str) -> ReplyKeyboardMarkup:
     t = TEXTS[lang]
     return ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text=t["btn_my_tours"]), KeyboardButton(text=t["btn_schedule"])],
             [KeyboardButton(text=t["btn_driver"]), KeyboardButton(text=t["btn_hist_details"])],
             [KeyboardButton(text=t["btn_first_aid"]), KeyboardButton(text=t["btn_tickets"])],
-            [KeyboardButton(text=t["btn_contacts"]), KeyboardButton(text=t["btn_faq"])],
-            [KeyboardButton(text=t["btn_emergency"])],
+            [KeyboardButton(text=t["btn_faq"]), KeyboardButton(text=t["btn_emergency"])],
             [KeyboardButton(text=t["btn_back"])],
         ],
         resize_keyboard=True
@@ -654,20 +694,31 @@ def voice_keyboard(lang: str) -> ReplyKeyboardMarkup:
         resize_keyboard=True
     )
 
+def hist_keyboard(lang: str) -> ReplyKeyboardMarkup:
+    t = TEXTS[lang]
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text=t["btn_panfilov"]), KeyboardButton(text=t["btn_greenbazaar"])],
+            [KeyboardButton(text=t["btn_koktobe"]), KeyboardButton(text=t["btn_shymbulak"])],
+            [KeyboardButton(text=t["btn_charyn"]), KeyboardButton(text=t["btn_kolsai"])],
+            [KeyboardButton(text=t["btn_issyk"])],
+            [KeyboardButton(text=t["btn_back"])],
+        ],
+        resize_keyboard=True
+    )
+
 # ─────────────────────────────────────────────
 # HELPERS
 # ─────────────────────────────────────────────
 def get_lang(user_id: int) -> str:
     return user_lang.get(user_id, "en")
 
-def get_text(user_id: int, key: str) -> str:
-    return TEXTS[get_lang(user_id)][key]
+# track whether user is in hist or voice mode
+user_mode = {}
 
 async def generate_voice(text: str, lang: str) -> bytes:
-    """Generate voice audio from text using OpenAI TTS"""
-    logging.info("Generating voice for lang=%s, text preview: %s", lang, text[:60])
-    voice_map = {"en": "nova", "ru": "nova", "kk": "nova"}
-    selected_voice = voice_map.get(lang, "nova")
+    logging.info("Generating voice for lang=%s, preview: %s", lang, text[:60])
+    selected_voice = "nova"
     try:
         response = client.audio.speech.create(
             model="tts-1",
@@ -683,7 +734,6 @@ async def generate_voice(text: str, lang: str) -> bytes:
         raise
 
 async def send_voice_tour(message: Message, tour_key: str):
-    """Helper to generate and send a voice tour message"""
     uid = message.from_user.id
     lang = get_lang(uid)
     tour_text = TEXTS[lang][tour_key]
@@ -696,6 +746,11 @@ async def send_voice_tour(message: Message, tour_key: str):
     except Exception as e:
         logging.error("Failed to send voice tour: %s", e)
         await message.answer("Sorry, voice generation failed. Please try again later.")
+
+async def send_hist_detail(message: Message, hist_key: str):
+    uid = message.from_user.id
+    lang = get_lang(uid)
+    await message.answer(TEXTS[lang][hist_key])
 
 # ─────────────────────────────────────────────
 # HANDLERS — Start & Language
@@ -728,7 +783,8 @@ async def tourist_role(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     user_role[uid] = "tourist"
-    logging.info("User %s selected Tourist role", uid)
+    user_mode[uid] = None
+    logging.info("User %s selected Tourist", uid)
     await message.answer(TEXTS[lang]["tourist_menu"], reply_markup=tourist_keyboard(lang))
 
 @dp.message(F.text.in_({"I am Guide", "Мен Гид", "Я Гид"}))
@@ -736,7 +792,8 @@ async def guide_role(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     user_role[uid] = "guide"
-    logging.info("User %s selected Guide role", uid)
+    user_mode[uid] = None
+    logging.info("User %s selected Guide", uid)
     await message.answer(TEXTS[lang]["guide_menu"], reply_markup=guide_keyboard(lang))
 
 # ─────────────────────────────────────────────
@@ -747,13 +804,14 @@ async def back_to_menu(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     role = user_role.get(uid, "tourist")
+    user_mode[uid] = None
     if role == "guide":
         await message.answer(TEXTS[lang]["guide_menu"], reply_markup=guide_keyboard(lang))
     else:
         await message.answer(TEXTS[lang]["tourist_menu"], reply_markup=tourist_keyboard(lang))
 
 # ─────────────────────────────────────────────
-# HANDLERS — Tourist Menu Items
+# HANDLERS — Tourist Menu
 # ─────────────────────────────────────────────
 @dp.message(F.text.in_({"Itinerary", "Маршрут"}))
 async def itinerary(message: Message):
@@ -765,6 +823,7 @@ async def itinerary(message: Message):
 async def voice_tours_menu(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
+    user_mode[uid] = "voice"
     await message.answer(TEXTS[lang]["voice_menu"], reply_markup=voice_keyboard(lang))
 
 @dp.message(F.text.in_({"Guide Contacts", "Контакты гида", "Гид байланыстары"}))
@@ -786,95 +845,92 @@ async def emergency(message: Message):
     await message.answer(TEXTS[lang]["emergency"])
 
 # ─────────────────────────────────────────────
-# HANDLERS — Guide Menu Items
+# HANDLERS — Guide Menu
 # ─────────────────────────────────────────────
-@dp.message(F.text.in_({"My Tours", "Мои туры", "Менің турларым"}))
-async def my_tours(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["my_tours"])
-
-@dp.message(F.text.in_({"My Earnings", "Мой доход", "Менің табысым"}))
-async def my_earnings(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["earnings"])
-
-@dp.message(F.text.in_({"My Schedule", "Моё расписание", "Менің кестем"}))
-async def my_schedule(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["schedule"])
-
-@dp.message(F.text.in_({"Driver Details", "Данные водителя"}))
+@dp.message(F.text.in_({"Driver Details", "Данные водителя", "Жүргізуші деректері"}))
 async def driver_details(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     await message.answer(TEXTS[lang]["driver_details"])
 
-@dp.message(F.text.in_({"Tour Historical Details", "Исторические данные"}))
+@dp.message(F.text.in_({"Tour Historical Details", "Исторические данные", "Тарихи деректер"}))
 async def historical_details_menu(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["hist_menu"], reply_markup=guide_keyboard(lang))
+    user_mode[uid] = "hist"
+    await message.answer(TEXTS[lang]["hist_menu"], reply_markup=hist_keyboard(lang))
 
-# ─────────────────────────────────────────────
-# HANDLERS — Voice Tour Locations
-# ─────────────────────────────────────────────
-@dp.message(F.text.in_({"Panfilov Park", "Парк Панфилова", "Панфилов саябағы"}))
-async def voice_panfilov(message: Message):
-    await send_voice_tour(message, "tour_panfilov")
-
-@dp.message(F.text.in_({"Green Bazaar", "Зелёный базар", "Жасыл базар"}))
-async def voice_greenbazaar(message: Message):
-    await send_voice_tour(message, "tour_greenbazaar")
-
-@dp.message(F.text.in_({"Kok Tobe", "Кок-Тобе"}))
-async def voice_koktobe(message: Message):
-    await send_voice_tour(message, "tour_koktobe")
-
-@dp.message(F.text.in_({"Shymbulak", "Шымбулак"}))
-async def voice_shymbulak(message: Message):
-    await send_voice_tour(message, "tour_shymbulak")
-
-@dp.message(F.text.in_({"Charyn Canyon", "Чарынский каньон", "Шарын каньоны"}))
-async def voice_charyn(message: Message):
-    await send_voice_tour(message, "tour_charyn")
-
-@dp.message(F.text.in_({"Kolsai Lakes", "Озёра Кольсай", "Көлсай көлдері"}))
-async def voice_kolsai(message: Message):
-    await send_voice_tour(message, "tour_kolsai")
-
-@dp.message(F.text.in_({"Issyk Lake", "Озеро Иссык", "Ыссық көл"}))
-async def voice_issyk(message: Message):
-    await send_voice_tour(message, "tour_issyk")
-
-# ─────────────────────────────────────────────
-# HANDLERS — Historical Details
-# ─────────────────────────────────────────────
-@dp.message(F.text.in_({"Driver Details", "Данные водителя"}))
-async def driver_details(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["driver_details"])
-
-@dp.message(F.text.in_({"Tour Historical Details", "Исторические данные"}))
-async def historical_details_menu(message: Message):
-    uid = message.from_user.id
-    lang = get_lang(uid)
-    await message.answer(TEXTS[lang]["hist_menu"], reply_markup=guide_keyboard(lang))
-
-@dp.message(F.text.in_({"First Aid Info", "Первая помощь"}))
+@dp.message(F.text.in_({"First Aid Info", "Первая помощь", "Алғашқы жәрдем"}))
 async def first_aid_info(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     await message.answer(TEXTS[lang]["first_aid"])
 
-@dp.message(F.text.in_({"Ticket Database", "База билетов"}))
+@dp.message(F.text.in_({"Ticket Database", "База билетов", "Билет базасы"}))
 async def ticket_database(message: Message):
     uid = message.from_user.id
     lang = get_lang(uid)
     await message.answer(TEXTS[lang]["tickets"])
+
+# ─────────────────────────────────────────────
+# HANDLERS — Location Buttons (Voice OR Historical)
+# Uses user_mode to decide which content to send
+# ─────────────────────────────────────────────
+@dp.message(F.text.in_({"Panfilov Park", "Парк Панфилова", "Панфилов саябағы"}))
+async def location_panfilov(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_panfilov")
+    else:
+        await send_voice_tour(message, "tour_panfilov")
+
+@dp.message(F.text.in_({"Green Bazaar", "Зелёный базар", "Жасыл базар"}))
+async def location_greenbazaar(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_greenbazaar")
+    else:
+        await send_voice_tour(message, "tour_greenbazaar")
+
+@dp.message(F.text.in_({"Kok Tobe", "Кок-Тобе"}))
+async def location_koktobe(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_koktobe")
+    else:
+        await send_voice_tour(message, "tour_koktobe")
+
+@dp.message(F.text.in_({"Shymbulak", "Шымбулак"}))
+async def location_shymbulak(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_shymbulak")
+    else:
+        await send_voice_tour(message, "tour_shymbulak")
+
+@dp.message(F.text.in_({"Charyn Canyon", "Чарынский каньон", "Шарын каньоны"}))
+async def location_charyn(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_charyn")
+    else:
+        await send_voice_tour(message, "tour_charyn")
+
+@dp.message(F.text.in_({"Kolsai Lakes", "Озёра Кольсай", "Көлсай көлдері"}))
+async def location_kolsai(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_kolsai")
+    else:
+        await send_voice_tour(message, "tour_kolsai")
+
+@dp.message(F.text.in_({"Issyk Lake", "Озеро Иссык", "Ыссық көл"}))
+async def location_issyk(message: Message):
+    uid = message.from_user.id
+    if user_mode.get(uid) == "hist":
+        await send_hist_detail(message, "hist_issyk")
+    else:
+        await send_voice_tour(message, "tour_issyk")
 
 # ─────────────────────────────────────────────
 # MAIN
